@@ -69,7 +69,7 @@
   },
   "orderers": {
     "orderer1.example.com": {
-      "url": "grpcs://192.168.1.103:7009",
+      "url": "grpcs://localhost:7009",
       "grpcOptions": {
         "ssl-target-name-override": "orderer1.example.com"
       },
@@ -78,7 +78,7 @@
       }
     },
     "orderer2.example.com": {
-      "url": "grpcs://192.168.1.103:7010",
+      "url": "grpcs://localhost:7010",
       "grpcOptions": {
         "ssl-target-name-override": "orderer2.example.com"
       },
@@ -87,7 +87,7 @@
       }
     },
     "orderer3.example.com": {
-      "url": "grpcs://192.168.1.103:7011",
+      "url": "grpcs://localhost:7011",
       "grpcOptions": {
         "ssl-target-name-override": "orderer3.example.com"
       },
@@ -98,7 +98,7 @@
   },
   "peers": {
     "peer1.ticaret.gov.tr": {
-      "url": "grpcs://192.168.1.103:7003",
+      "url": "grpcs://localhost:7003",
       "grpcOptions": {
         "ssl-target-name-override": "peer1.ticaret.gov.tr"
       },
@@ -107,7 +107,7 @@
       }
     },
     "peer2.ticaret.gov.tr": {
-      "url": "grpcs://192.168.1.103:7004",
+      "url": "grpcs://localhost:7004",
       "grpcOptions": {
         "ssl-target-name-override": "peer2.ticaret.gov.tr"
       },
@@ -116,7 +116,7 @@
       }
     },
     "peer1.reputationsystem.com": {
-      "url": "grpcs://192.168.1.103:7005",
+      "url": "grpcs://localhost:7005",
       "grpcOptions": {
         "ssl-target-name-override": "peer1.reputationsystem.com"
       },
@@ -125,7 +125,7 @@
       }
     },
     "peer2.reputationsystem.com": {
-      "url": "grpcs://192.168.1.103:7006",
+      "url": "grpcs://localhost:7006",
       "grpcOptions": {
         "ssl-target-name-override": "peer2.reputationsystem.com"
       },
@@ -134,7 +134,7 @@
       }
     },
     "peer1.seller.com": {
-      "url": "grpcs://192.168.1.103:7007",
+      "url": "grpcs://localhost:7007",
       "grpcOptions": {
         "ssl-target-name-override": "peer1.seller.com"
       },
@@ -143,7 +143,7 @@
       }
     },
     "peer2.seller.com": {
-      "url": "grpcs://192.168.1.103:7008",
+      "url": "grpcs://localhost:7008",
       "grpcOptions": {
         "ssl-target-name-override": "peer2.seller.com"
       },
@@ -154,7 +154,7 @@
   },
   "certificateAuthorities": {
     "ca1.ticaret.gov.tr": {
-      "url": "https://192.168.1.103:7000",
+      "url": "https://localhost:7000",
       "tlsCACerts": {
         "pem": "-----BEGIN CERTIFICATE-----\nMIICrTCCAlKgAwIBAgIUBWy3d67YYK2PmjbJY636xtqdWzQwCgYIKoZIzj0EAwIw\nbjELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMRcwFQYDVQQKDA50aWNhcmV0Lmdvdi50cjEbMBkGA1UEAwwSY2Ex\nLnRpY2FyZXQuZ292LnRyMB4XDTIyMDYxOTEyMzYzNFoXDTMyMDYxNjEyMzYzNFow\nbjELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMRcwFQYDVQQKDA50aWNhcmV0Lmdvdi50cjEbMBkGA1UEAwwSY2Ex\nLnRpY2FyZXQuZ292LnRyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvXwRfYMS\nS3EKuVg9AQEU95pbIAM9cQsxdziX2szMFQSlkYKAxXc+ZHgn3Ngf4i/jLXTOAy/H\nZa9hcpqMT4wsMaOBzTCByjAdBgNVHQ4EFgQU8FARlykCSYXSWE4GVOzHjO5f0w0w\nHwYDVR0jBBgwFoAU8FARlykCSYXSWE4GVOzHjO5f0w0wDwYDVR0TAQH/BAUwAwEB\n/zAOBgNVHQ8BAf8EBAMCAaYwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMC\nMEgGA1UdEQRBMD+HBMCoAWeCEmNhMS50aWNhcmV0Lmdvdi50coISY2ExLXRpY2Fy\nZXQtZ292LXRygglsb2NhbGhvc3SHBH8AAAEwCgYIKoZIzj0EAwIDSQAwRgIhALCg\n5Ro9GDm5eyWk7vmsBYwhSi1TqI9Ov7d35b9DdIf3AiEA6KpFsD2pRAdI/hLlmy+f\nVluJaPN8UX+GL6m4RJxaFo8=\n-----END CERTIFICATE-----"
       },
@@ -163,7 +163,7 @@
       "registrar": { "enrollId": "admin", "enrollSecret": "adminpw" }
     },
     "ca1.reputationsystem.com": {
-      "url": "https://192.168.1.103:7001",
+      "url": "https://localhost:7001",
       "tlsCACerts": {
         "pem": "-----BEGIN CERTIFICATE-----\nMIICzzCCAnagAwIBAgIUJ23w8/XTPp8TNIi/TIgAQ2ZSHQkwCgYIKoZIzj0EAwIw\nejELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMR0wGwYDVQQKDBRyZXB1dGF0aW9uc3lzdGVtLmNvbTEhMB8GA1UE\nAwwYY2ExLnJlcHV0YXRpb25zeXN0ZW0uY29tMB4XDTIyMDYxOTEyMzYwN1oXDTMy\nMDYxNjEyMzYwN1owejELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9s\naW5hMRAwDgYDVQQHDAdSYWxlaWdoMR0wGwYDVQQKDBRyZXB1dGF0aW9uc3lzdGVt\nLmNvbTEhMB8GA1UEAwwYY2ExLnJlcHV0YXRpb25zeXN0ZW0uY29tMFkwEwYHKoZI\nzj0CAQYIKoZIzj0DAQcDQgAEM+pLAvx86fI4981sqyWrX8OBXpBuJfBpwYlUqlxO\nazpNZKq1L5MKdmrN6Bk9K7ItNBB5WrKgPjhX+TXDlpX+haOB2TCB1jAdBgNVHQ4E\nFgQU9hlPLm6N4D1Xtn0zxX931kmn4GwwHwYDVR0jBBgwFoAU9hlPLm6N4D1Xtn0z\nxX931kmn4GwwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAaYwHQYDVR0l\nBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMFQGA1UdEQRNMEuHBMCoAWeCGGNhMS5y\nZXB1dGF0aW9uc3lzdGVtLmNvbYIYY2ExLXJlcHV0YXRpb25zeXN0ZW0tY29tggls\nb2NhbGhvc3SHBH8AAAEwCgYIKoZIzj0EAwIDRwAwRAIge2ne8cX6EopSSIHKVPXm\n+smFy+BK0OBwJyDSh+Xz6kkCIE8IkX5/xFeamGoNsK/McrBNlOQbOzTSamIc2paz\n98ov\n-----END CERTIFICATE-----"
       },
@@ -172,7 +172,7 @@
       "registrar": { "enrollId": "admin", "enrollSecret": "adminpw" }
     },
     "ca1.seller.com": {
-      "url": "https://192.168.1.103:7002",
+      "url": "https://localhost:7002",
       "tlsCACerts": {
         "pem": "-----BEGIN CERTIFICATE-----\nMIIClTCCAjqgAwIBAgIUSPHEXK3alFW2R2CqTHwfm2J+tGwwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMRMwEQYDVQQKDApzZWxsZXIuY29tMRcwFQYDVQQDDA5jYTEuc2Vs\nbGVyLmNvbTAeFw0yMjA2MTkxMjM2MjBaFw0zMjA2MTYxMjM2MjBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBwwHUmFsZWln\naDETMBEGA1UECgwKc2VsbGVyLmNvbTEXMBUGA1UEAwwOY2ExLnNlbGxlci5jb20w\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASzmBVfrIFNtJSDtf2+8tj7xwIfAU1G\n9D/jslKA5VJss7ltFbNmTd6NJQpJB5nEgl+wJjsovaKVghKONWBkLEl4o4HFMIHC\nMB0GA1UdDgQWBBRvAhbB10fMxfX+7WhoFh38w01SyzAfBgNVHSMEGDAWgBRvAhbB\n10fMxfX+7WhoFh38w01SyzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIB\npjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwQAYDVR0RBDkwN4cEwKgB\nZ4IOY2ExLnNlbGxlci5jb22CDmNhMS1zZWxsZXItY29tgglsb2NhbGhvc3SHBH8A\nAAEwCgYIKoZIzj0EAwIDSQAwRgIhANDAwgkf8gdc9DeNj/9O/qQ1tFtoT2hgGnpk\nrFde3Pj+AiEA2eiv32xmvFaTogLx4ZvThw4fEXYqTgS+tr0lV36MAnU=\n-----END CERTIFICATE-----"
       },
@@ -186,66 +186,66 @@
       { "mappedHost": "orderer1.example.com",
         "pattern": "(\\w*)orderer1.example.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "orderer1.example.com",
-        "urlSubstitutionExp": "192.168.1.103:7009"
+        "urlSubstitutionExp": "localhost:7009"
       },
       { "mappedHost": "orderer2.example.com",
         "pattern": "(\\w*)orderer2.example.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "orderer2.example.com",
-        "urlSubstitutionExp": "192.168.1.103:7010"
+        "urlSubstitutionExp": "localhost:7010"
       },
       { "mappedHost": "orderer3.example.com",
         "pattern": "(\\w*)orderer3.example.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "orderer3.example.com",
-        "urlSubstitutionExp": "192.168.1.103:7011"
+        "urlSubstitutionExp": "localhost:7011"
       }
     ],
     "peer": [
       { "mappedHost": "peer1.ticaret.gov.tr",
         "pattern": "(\\w*)peer1.ticaret.gov.tr(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer1.ticaret.gov.tr",
-        "urlSubstitutionExp": "192.168.1.103:7003"
+        "urlSubstitutionExp": "localhost:7003"
       },
       { "mappedHost": "peer2.ticaret.gov.tr",
         "pattern": "(\\w*)peer2.ticaret.gov.tr(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer2.ticaret.gov.tr",
-        "urlSubstitutionExp": "192.168.1.103:7004"
+        "urlSubstitutionExp": "localhost:7004"
       },
       { "mappedHost": "peer1.reputationsystem.com",
         "pattern": "(\\w*)peer1.reputationsystem.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer1.reputationsystem.com",
-        "urlSubstitutionExp": "192.168.1.103:7005"
+        "urlSubstitutionExp": "localhost:7005"
       },
       { "mappedHost": "peer2.reputationsystem.com",
         "pattern": "(\\w*)peer2.reputationsystem.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer2.reputationsystem.com",
-        "urlSubstitutionExp": "192.168.1.103:7006"
+        "urlSubstitutionExp": "localhost:7006"
       },
       { "mappedHost": "peer1.seller.com",
         "pattern": "(\\w*)peer1.seller.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer1.seller.com",
-        "urlSubstitutionExp": "192.168.1.103:7007"
+        "urlSubstitutionExp": "localhost:7007"
       },
       { "mappedHost": "peer2.seller.com",
         "pattern": "(\\w*)peer2.seller.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "peer2.seller.com",
-        "urlSubstitutionExp": "192.168.1.103:7008"
+        "urlSubstitutionExp": "localhost:7008"
       }
     ],
   "certificateAuthorities": [
       { "mappedHost": "ca1.ticaret.gov.tr",
         "pattern": "(\\w*)ca1.ticaret.gov.tr(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "ca1.ticaret.gov.tr",
-        "urlSubstitutionExp": "192.168.1.103:7000"
+        "urlSubstitutionExp": "localhost:7000"
       },
       { "mappedHost": "ca1.reputationsystem.com",
         "pattern": "(\\w*)ca1.reputationsystem.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "ca1.reputationsystem.com",
-        "urlSubstitutionExp": "192.168.1.103:7001"
+        "urlSubstitutionExp": "localhost:7001"
       },
       { "mappedHost": "ca1.seller.com",
         "pattern": "(\\w*)ca1.seller.com(\\w*)",
         "sslTargetOverrideUrlSubstitutionExp": "ca1.seller.com",
-        "urlSubstitutionExp": "192.168.1.103:7002"
+        "urlSubstitutionExp": "localhost:7002"
       }
     ]
   }

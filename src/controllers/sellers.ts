@@ -61,7 +61,7 @@ const registerSeller = async (req: Request, res: Response, next: NextFunction) =
         const cm = new ChaincodeManager();
         await cm.CreateSeller(sellerId, name, url, registeredBy);
     
-        return res.status(200).json('Created');    
+        return res.status(200).json('Created after checking Digital Identity Proof');    
     } catch (error) {
         return res.status(500).json('Error occurred - ' + error);
     }

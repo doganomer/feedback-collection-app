@@ -56,7 +56,7 @@ class ChaincodeManager {
 
         try {
 
-            let result = await this.RunChaincodeMethod(true, 'CreateSeller', id, Name, Url, RegisteredBy);
+            let result = await this.RunChaincodeMethod(true, 'CreateSeller', id, Name, Url, RegisteredBy, new Date().toString());
             //console.log(`*** Result: ${prettyJSONString(result.toString())}`);
 
             return result;

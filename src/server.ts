@@ -62,15 +62,15 @@ httpServer.listen(PORT, () => LoggerFactory.getInstance().logger.info(`Server is
 
 // Set Values of Global Variables
 global.ConnectionIds = {
-    BuyerConnectionIdOnFCS: 'd5384b59-90ef-4b7a-981c-96889d11c2cf',
-    SellerConnectionIdOnFCS: 'ef13d73f-4306-4594-a37b-679933e71405'
+    BuyerConnectionIdOnFCS: 'f09ce6a2-7428-4ad5-91fe-9c7276b9fa3b',
+    SellerConnectionIdOnFCS: 'c382716b-6cd2-46cd-9ff2-dfabcaedf84d'
 }
 
 global.AgentRootUrls = {
-    BuyerAgentUrl: 'http://localhost:5001',
-    SellerAgentUrl: 'http://localhost:6001',
-    FcsAgentUrl: 'http://localhost:6101',
-    TicaretBakanligiAgentUrl: 'http://localhost:6201'
+    BuyerAgentUrl: 'http://kimlik.switzerlandnorth.cloudapp.azure.com:5001',
+    SellerAgentUrl: 'http://kimlik.switzerlandnorth.cloudapp.azure.com:6001',
+    FcsAgentUrl: 'http://kimlik.switzerlandnorth.cloudapp.azure.com:6101',
+    TicaretBakanligiAgentUrl: 'http://kimlik.switzerlandnorth.cloudapp.azure.com:6201'
 }
 
 global.SchemaIds = {
@@ -81,7 +81,7 @@ global.SchemaIds = {
 
 global.CredDefIds = {
     FeedbackTokenCredDefId: 'RRoXJyEovvY6jra2N6ukho:3:CL:14:default',
-    DiscountTokenCredDefId: 'VLUhnGg8ehtJhU1r3LesdM:3:CL:15:default',
+    DiscountTokenCredDefId: 'VLUhnGg8ehtJhU1r3LesdM:3:CL:16:default',
     SellerDigitalIdentityCredDefId: 'NTKxqEWDjZov2Yq9jRZjs3:3:CL:12:default'
 }
 

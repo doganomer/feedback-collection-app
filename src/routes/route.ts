@@ -8,5 +8,6 @@ router.get('/sellers/:id', sellerController.getSeller);
 router.post('/sellers/add', sellerController.registerSeller);
 
 router.post('/feedbacks/add', fcsController.sendFeedback);
+router.get('/feedbacks', fcsController.getFeedbacks);
 
 export = router;

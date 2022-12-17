@@ -25,12 +25,20 @@ class ChaincodeManager {
 
 
     public async GetAllSellers() {
-        // await this.ConnectToChaincode();
+        const starttime = process.hrtime();
+        try {
 
-        let result = ''; //await ChaincodeManager._chaincode.evaluateTransaction('GetAllSellers');
+            let result = await this.RunChaincodeMethod(false, 'GetAllSellers');
+            console.log(`*** Result: ${prettyJSONString(result.toString())}`);
 
-        // //return prettyJSONString(result.toString());
-        return result.toString();
+            return result;
+
+        } catch (error) {
+            console.error(`******** FAILED to run the application: ${error}`);
+        } finally {
+            const endtime = process.hrtime(starttime);
+            console.log('Execution time for GetSeller (hr): %ds %dms', endtime[0], endtime[1] / 1000000)
+        }
     }
 
     public async GetSeller(id: string) {
@@ -56,13 +64,14 @@ class ChaincodeManager {
 
         try {
 
-            let result = await this.RunChaincodeMethod(true, 'CreateSeller', id, Name, Url, RegisteredBy, new Date().toString());
+            let result = await this.RunChaincodeMethod(true, 'CreateSeller', id, Name, Url, RegisteredBy);
             //console.log(`*** Result: ${prettyJSONString(result.toString())}`);
 
             return result;
 
         } catch (error) {
             console.error(`******** FAILED CreateSeller Method in chaincode-manager: ${error}`);
+            throw error;
         } finally {
             const endtime = process.hrtime(starttime);
             console.log('Execution time for CreateSeller (hr): %ds %dms', endtime[0], endtime[1] / 1000000)
@@ -90,7 +99,22 @@ class ChaincodeManager {
         }
     }
 
+    public async GetAllFeedbacks() {
+        const starttime = process.hrtime();
+        try {
 
+            let result = await this.RunChaincodeMethod(false, 'GetAllFeedbacks');
+            console.log(`*** Result: ${prettyJSONString(result.toString())}`);
+
+            return result;
+
+        } catch (error) {
+            console.error(`******** FAILED to run the application: ${error}`);
+        } finally {
+            const endtime = process.hrtime(starttime);
+            console.log('Execution time for GetAllFeedbacks (hr): %ds %dms', endtime[0], endtime[1] / 1000000)
+        }
+    }
 
     private async RunChaincodeMethod(isSubmit: boolean, methodName: string, ...args: string[]) {
         try {

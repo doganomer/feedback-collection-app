@@ -55,4 +55,16 @@ const sendFeedback = async (req: Request, res: Response, next: NextFunction) => 
     }
 }
 
-export default { sendFeedback };
+const getFeedbacks = async (req: Request, res: Response, next: NextFunction) => {
+
+    const cm = new ChaincodeManager();
+
+    let feedbackList;
+    await cm.GetAllFeedbacks().then((sl)=> {
+        feedbackList = sl;
+    });
+
+    return res.status(200).type('application/json').send(feedbackList);
+}
+
+export default { sendFeedback, getFeedbacks };

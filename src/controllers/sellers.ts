@@ -7,8 +7,10 @@ const getSellers = async (req: Request, res: Response, next: NextFunction) => {
 
     const cm = new ChaincodeManager();
 
-    let sellerList = '';
-    await cm.GetAllSellers().then((sl)=> sellerList = sl);
+    let sellerList;
+    await cm.GetAllSellers().then((sl)=> {
+        sellerList = sl;
+    });
 
     return res.status(200).type('application/json').send(sellerList);
 }
